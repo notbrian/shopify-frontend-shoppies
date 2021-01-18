@@ -104,7 +104,7 @@ const IndexPage = () => {
   );
 
   const fetchData = (title) => {
-    fetch(`http://www.omdbapi.com/?s=${title}&apikey=${apiKey}&type=movie`)
+    fetch(`https://www.omdbapi.com/?s=${title}&apikey=${apiKey}&type=movie`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
